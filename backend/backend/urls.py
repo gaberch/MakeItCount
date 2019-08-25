@@ -26,5 +26,6 @@ router.register(r'activities', views.ActivityView, 'Activity')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include(router.urls))
+    path('api/', include(router.urls)),
+    # path('', include('makeitcount.urls')),
 ]
